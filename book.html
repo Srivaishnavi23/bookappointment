@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Book an Appointment</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<h1>Book an Appointment</h1>
+	<form>
+		<label for="name">Name:</label>
+		<input type="text" id="name" name="name" required>
+
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email" required>
+
+		<label for="date">Date:</label>
+		<input type="date" id="date" name="date" required>
+
+		<label for="time">Time:</label>
+		<input type="time" id="time" name="time" required>
+
+		<input type="button" value="Book Now" onclick="bookAppointment()">
+	</form>
+	<div id="message"></div>
+	<script src="book.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.5/axios.min.js"></script>
+</body>
+</html>
